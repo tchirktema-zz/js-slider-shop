@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
+<link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="carousel">
+                                <div><img id="image1" onclick="chemiseFunction(this.id)"  src="https://www.altermundi.com/54798-large_default/chemise-dog-tooth-coton-biologique.jpg"></div>
+                                <div><img id="image2" onclick="chemiseFunction(this.id)" src="https://www.ruedeshommes.com/media/produits/img/36052-minimum-h16-chemise-13097-0110-rex-0110-689-dark-navy-chemise-cintree-rex-minimum-en-coton-bleu-marine-brodee-de-pois-blancs-1_1128x1128.jpg"></div>
+                                <div><img id="image3" onclick="chemiseFunction(this.id)" src="https://www.oxwork.com/media/catalog/product/image/1800x/chemise-matelassee-dickies-portland-OXWORK-chemise-matelassee-dickies-portland-bleu.jpg"></div>
+                                <div><img id="image4" onclick="chemiseFunction(this.id)" src="https://s1.rockagogostatic.com/ref/pl/pl880/chemise-sans-manche-divers-noire-pr.jpg"></div>
+                                <div><img id="image5" onclick="chemiseFunction(this.id)" src="https://images-na.ssl-images-amazon.com/images/I/71WuTjCNN1L._UY550_.jpg"></div>
+                                <div><img id="image6" onclick="chemiseFunction(this.id)" src="https://img1.seidensticker.fr/11694-product_zoom_default/chemisier-slim-rayures-blanches-sur-fond-bleu.jpg"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="carousel">
+                                <div><img id="image7" onclick="patalonFunction(this.id)"  src="https://uniqlo.scene7.com/is/image/UNIQLO/goods_05_404662?$pdp-medium$"></div>
+                                <div><img id="image8" onclick="patalonFunction(this.id)"  src="https://uniqlo.scene7.com/is/image/UNIQLO/goods_69_400552?$pdp-medium$"></div>
+                                <div><img id="image9" onclick="patalonFunction(this.id)"  src="https://www.franceduvalstalla.com/3541-large_default/tutoriel-pantalon-gabrielle-france-duval-stalla.jpg"></div>
+                                <div><img id="image10" onclick="patalonFunction(this.id)"  src="https://i2.cdscdn.com/pdt2/8/6/0/1/300x300/mp09672860/rw/pantalon-femme-sport-large-grande-taille-chaud-epa.jpg"></div>
+                                <div><img id="image11" onclick="patalonFunction(this.id)"  src="https://www.vetdepro.com/2081-thickbox_default/pantalon-droit-femme-lafont-muscat-tenue-de-serveuse.jpg"></div>
+                                <div><img id="image12" onclick="patalonFunction(this.id)"  src="https://www.blousetterose.com/wp-content/uploads/2017/01/mod%C3%A8le.jpg"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="carousel">
+                                <div><img id="image13" onclick="chaussureFunction(this.id)"  src="https://www.modyf.fr/blog/wp-content/uploads/2017/04/chaussure-securite-confortable-pieds-sensibles-378x420.jpg"></div>
+                                <div><img id="image14" onclick="chaussureFunction(this.id)"  src="https://www.vetdepro.com/989/316.jpg"></div>
+                                <div><img id="image15" onclick="chaussureFunction(this.id)"  src="https://kidipro.fr/95-thickbox_default/chaussures-de-securite-basses-type-basket-de-securite-trophy-s1p-de-upower.jpg"></div>
+                                <div><img id="image16" onclick="chaussureFunction(this.id)"    src="https://www.echoppe.fr/6909-large_default/chaussure-securite-professionnelle-travail-cuir-iso-en-20345-s1p-homme-chantier-logistique-creche-artisan.jpg"></div>
+                                <div><img id="image17" onclick="chaussureFunction(this.id)"  src="https://www.echoppe.fr/6909-large_default/chaussure-securite-professionnelle-travail-cuir-iso-en-20345-s1p-homme-chantier-logistique-creche-artisan.jpg"></div>
+                                <div><img id="image18" onclick="chaussureFunction(this.id)"  src="https://www.lemaitre-securite.com/media/catalog/product/cache/image/720x720/e9c3970ab036de70892d86c6d221abfe/t/o/tom-s3-lemaitre_1_1.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-4" style="padding-top:1em;">
+                <div class="row">
+                    <div class="col-12">
+                        <canvas id="chemise" >
+                                Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+
+                    <div class="col-12">
+                        <canvas id="patalon" >
+                                Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+
+                    <div class="col-12">
+                        <canvas id="chaussure" >
+                                Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 5,
+                dots:true,
+                // centerMode: true,
+            });
+        });
+
+        function chemiseFunction(id){
+            var canvas = document.getElementById("chemise");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById(id);
+            canvas.width = img.naturalWidth;
+            canvas.height = img.naturalHeight;
+            ctx.drawImage(img, 0, 0);
+        }
+
+
+        function patalonFunction(id){
+            var canvas = document.getElementById("patalon");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById(id);
+            canvas.width = img.naturalWidth;
+            canvas.height = img.naturalHeight;
+            ctx.drawImage(img, 0, 0);
+        }
+
+        function chaussureFunction(id){
+            var canvas = document.getElementById("chaussure");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById(id);
+            canvas.width = img.naturalWidth;
+            canvas.height = img.naturalHeight;
+            ctx.drawImage(img, 0, 0);
+        }
+    </script>
+</body>
+</html>
